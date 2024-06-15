@@ -2,6 +2,45 @@
 
 This is the Little Lemon Capstone Project.
 
+# To set up project environment
+
+* Create a folder to store the capstone project
+* cd into this folder
+* Use git clone command to clone remote repository to your local machine
+* Open the project in VS Code
+* Open VS Code terminal
+* cd LittleLemonCapstone
+* python3 -m venv myenv
+* source myenv/bin/activate
+* pip3 install django
+* pip3 install mysqlclient
+* pip3 install djangorestframework
+* pip3 install djoser
+* cd littlelemon
+* start mysql server
+* python3 manage.py runserver
+
+# MySQL
+
+* !!! IMPORTANT !!!
+
+* Make sure to enter the right 'USER' and 'PASSWORD' in the DATABASES section in the settings.py file.
+
+* Make sure to start your MySQL server before starting the server.
+
+* Don't forget to use python3 manage.py makemigrations and python3 manage.py migrate
+
+1. Open VSCode terminal
+    * Type: mysql - u root -p
+    * Enter your mysql password.
+    * Type: SHOW DATABASES;
+    * Note: a database named littlelemon should be present.  If there is none, use CREATE DATABASE littlelemon;
+    * Type: SHOW DATABASES;
+    * Type: USE littlelemon;
+    * Type: SHOW TABLES;
+    * Type: SELECT * FROM restaurant_booking;
+    * Type: SELECT * FROM restaurant_menu;
+
 # User information
 
 1. Admin
@@ -27,21 +66,6 @@ This is the Little Lemon Capstone Project.
      + little@123!
    * Authentication Token
      + 3f876b6b57bc1f13fe2826e6373271f5a64879d3
-
-# MySQL
-
-* Make sure to enter the right 'USER' and 'PASSWORD' in the DATABASES section in the settings.py file.
-
-* Make sure to start your MySQL server before starting the server.
-
-1. Open VSCode terminal
-    * Type: mysql - u root -p
-    * Enter your mysql password.
-    * Type: SHOW DATABASES;
-    * Type: USE littlelemon;
-    * Type: SHOW TABLES;
-    * Type: SELECT * FROM restaurant_booking;
-    * Type: SELECT * FROM restaurant_menu;
 
 # API endpoints
 
